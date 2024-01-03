@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Automarket.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Automarket.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Automarket.Domain.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Automarket.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Automarket.Domain/Automarket.Domain.csproj",
-      "msbuildProject": "../Automarket.Domain/Automarket.Domain.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Automarket.Domain >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\": {},
@@ -34,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\Automarket.csproj",
-      "projectName": "Automarket",
-      "projectPath": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\Automarket.csproj",
+      "projectUniqueName": "D:\\GitHub\\Automarket\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj",
+      "projectName": "Automarket.Domain",
+      "projectPath": "D:\\GitHub\\Automarket\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj",
       "packagesPath": "C:\\Users\\artemLitvinenko\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\obj\\",
+      "outputPath": "D:\\GitHub\\Automarket\\Automarket\\Automarket.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -56,17 +37,12 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\GitHub\\Automarket\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj": {
-              "projectPath": "D:\\GitHub\\Automarket\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -90,9 +66,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

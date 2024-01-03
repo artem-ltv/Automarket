@@ -1,4 +1,5 @@
-﻿using Automarket.Models;
+﻿using Automarket.Domain.Models;
+using Automarket.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
