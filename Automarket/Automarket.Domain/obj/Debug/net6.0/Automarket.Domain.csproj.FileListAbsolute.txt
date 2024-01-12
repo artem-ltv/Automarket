@@ -1,0 +1,12 @@
+D:\GitHub\Automarket\Automarket\Automarket.Domain\bin\Debug\net6.0\Automarket.Domain.deps.json
+D:\GitHub\Automarket\Automarket\Automarket.Domain\bin\Debug\net6.0\Automarket.Domain.dll
+D:\GitHub\Automarket\Automarket\Automarket.Domain\bin\Debug\net6.0\Automarket.Domain.pdb
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.csproj.AssemblyReference.cache
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.AssemblyInfoInputs.cache
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.AssemblyInfo.cs
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.csproj.CoreCompileInputs.cache
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.dll
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\refint\Automarket.Domain.dll
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.pdb
+D:\GitHub\Automarket\Automarket\Automarket.Domain\obj\Debug\net6.0\ref\Automarket.Domain.dll

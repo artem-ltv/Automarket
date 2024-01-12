@@ -1,0 +1,23 @@
+﻿@using Automarket.Domain.Models;
+
+@model IEnumerable<Car>
+
+@{
+    ViewData["Title"] = "GetCars";
+}
+
+@{
+    foreach(var car in Model)
+    {
+        <p>---------------------------------</p>
+        <p>Id: @car.Id</p>
+        <p>Name: @car.Name</p>
+        <p>Model: @car.Model</p>
+        <p>Description: @car.Description</p>
+        <p>Speed: @car.Speed</p>
+        <p>Price: @car.Price</p>
+        <p>CreateDate: @car.CreateDate</p>
+        <p>TypeCar: @car.TypeCar</p>
+        <p>---------------------------------</p>
+    }
+}
