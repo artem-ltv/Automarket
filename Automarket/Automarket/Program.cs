@@ -13,6 +13,7 @@ internal class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+
         builder.Services.AddScoped<ICarRepository, CarRepository>();
         builder.Services.AddScoped<ICarService, CarService>();
 

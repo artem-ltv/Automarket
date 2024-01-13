@@ -3,6 +3,7 @@ using Automarket.Domain.Models;
 using Automarket.Domain.Responses;
 using Automarket.Domain.Interfaces;
 using Automarket.Service.Interfaces;
+using Automarket.Domain.ViewModels.Car;
 
 namespace Automarket.Service.Implementations
 {
@@ -37,7 +38,8 @@ namespace Automarket.Service.Implementations
             {
                 return new BaseResponse<IEnumerable<Car>>()
                 {
-                    Description = $"[GetCars]: {ex.Message}"
+                    Description = $"[GetAllCars]: {ex.Message}",
+                    StatusCode = Domain.Enums.StatusCode.InternalServerError
                 };
             }
         }
@@ -45,14 +47,13 @@ namespace Automarket.Service.Implementations
         public async Task<IBaseResponse<Car>> GetCarById(int id)
         {
             var baseResponse = new BaseResponse<Car>();
-
             try
             {
                 var car = await _carRepository.GetById(id);
-                if(car == null)
+                if (car == null)
                 {
-                    baseResponse.Description = "Элемент не найден";
                     baseResponse.StatusCode = Domain.Enums.StatusCode.NotFound;
+                    baseResponse.Description = "Элемент не найден";
                     return baseResponse;
                 }
 
@@ -60,11 +61,114 @@ namespace Automarket.Service.Implementations
                 baseResponse.StatusCode = Domain.Enums.StatusCode.OK;
                 return baseResponse;
             }
+
+            catch (Exception ex) 
+            {
+                return new BaseResponse<Car>()
+                {
+                    Description = $"[GetCarById]: {ex.Message}",
+                    StatusCode = Domain.Enums.StatusCode.InternalServerError
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<Car>> GetCarByName(string name)
+        {
+            var baseResponse = new BaseResponse<Car>();
+            try
+            {
+                var car = await _carRepository.GetByName(name);
+                if (car == null)
+                {
+                    baseResponse.StatusCode = Domain.Enums.StatusCode.NotFound;
+                    baseResponse.Description = "Элемент не найден";
+                    return baseResponse;
+                }
+
+                baseResponse.Data = car;
+                baseResponse.StatusCode = Domain.Enums.StatusCode.OK;
+                return baseResponse;
+            }
+
             catch (Exception ex)
             {
                 return new BaseResponse<Car>()
                 {
-                    Description = $"[GetCars]: {ex.Message}"
+                    Description = $"[GetCarByName]: {ex.Message}",
+                    StatusCode = Domain.Enums.StatusCode.InternalServerError
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<bool>> DeleteCar(int id)
+        {
+            var baseResponse = new BaseResponse<bool>();
+            try
+            {
+                var car = await _carRepository.GetById(id);
+                if (car == null)
+                {
+                    baseResponse.StatusCode = Domain.Enums.StatusCode.NotFound;
+                    baseResponse.Description = "Элемент не найден";
+                    return baseResponse;
+                }
+
+                var isDelete = await _carRepository.Delete(car);
+                baseResponse.StatusCode = Domain.Enums.StatusCode.OK;
+                baseResponse.Data = isDelete;
+
+                return baseResponse;
+            }
+
+            catch (Exception ex)
+            {
+                return new BaseResponse<bool>()
+                {
+                    Description = $"[DeleteCar]: {ex.Message}",
+                    StatusCode = Domain.Enums.StatusCode.InternalServerError
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<bool>> CreateCar(CarViewModel carViewModel)
+        {
+            var baseResponse = new BaseResponse<bool>();
+
+            try
+            {
+                if(carViewModel == null)
+                {
+                    baseResponse.Description = "Элемент carViewModel = null";
+                    baseResponse.StatusCode = Domain.Enums.StatusCode.NotFound;
+
+                    return baseResponse;
+                }
+
+                var newCar = new Car()
+                {
+                    Name = carViewModel.Name,
+                    Description = carViewModel.Description,
+                    Model = carViewModel.Model,
+                    Speed = carViewModel.Speed,
+                    Price = carViewModel.Price,
+                    CreateDate = carViewModel.CreateDate,
+                    TypeCar = carViewModel.TypeCar,
+                };
+
+                var isCreated = await _carRepository.Create(newCar);
+
+                baseResponse.StatusCode = Domain.Enums.StatusCode.OK;
+                baseResponse.Data = isCreated;
+
+                return baseResponse;
+            }
+
+            catch (Exception ex)
+            {
+                return new BaseResponse<bool>()
+                {
+                    Description = $"[CreateCar]: {ex.Message}",
+                    StatusCode = Domain.Enums.StatusCode.InternalServerError
                 };
             }
         }

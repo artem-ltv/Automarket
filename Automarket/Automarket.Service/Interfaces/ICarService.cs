@@ -1,6 +1,6 @@
 ﻿using Automarket.Domain.Models;
-using Automarket.Domain.Responses;
 using Automarket.Domain.Interfaces;
+using Automarket.Domain.ViewModels.Car;
 
 namespace Automarket.Service.Interfaces
 {
@@ -8,8 +8,8 @@ namespace Automarket.Service.Interfaces
     {
         Task<IBaseResponse<IEnumerable<Car>>> GetAllCars();
         Task<IBaseResponse<Car>> GetCarById(int id);
-        //BaseResponse<Car> GetCarByName(string name);
-        //BaseResponse<bool> DeleteCar(Car car);
-        //BaseResponse<bool> CreateCar(Car car);
+        Task<IBaseResponse<Car>> GetCarByName(string name);
+        Task<IBaseResponse<bool>> DeleteCar(int id);
+        Task<IBaseResponse<bool>> CreateCar(CarViewModel carViewModel);
     }
 }
