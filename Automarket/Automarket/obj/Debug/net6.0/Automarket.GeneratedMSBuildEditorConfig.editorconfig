@@ -16,12 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\GitHub\Automarket\Automarket\Automarket
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/GitHub/Automarket/Automarket/Automarket/Views/Car/GetAll.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldEFsbC5jc2h0bWw=
+[D:/GitHub/Automarket/Automarket/Automarket/Views/Car/GetCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHub/Automarket/Automarket/Automarket/Views/Car/GetCarById.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhckJ5SWQuY3NodG1s
+[D:/GitHub/Automarket/Automarket/Automarket/Views/Car/GetCarByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhckJ5TmFtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Automarket/Automarket/Automarket/Views/Car/GetCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GitHub/Automarket/Automarket/Automarket/Views/Home/Index.cshtml]

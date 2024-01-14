@@ -48,7 +48,7 @@ namespace Automarket.DAL.Repositories
             return await _dbContext.Cars.ToListAsync();
         }
 
-        public async Task<Car> GetById(int id)
+        public async Task<Car> Get(int id)
         {
             return await _dbContext.Cars.FirstOrDefaultAsync(x => x.Id == id);
         }
@@ -56,6 +56,14 @@ namespace Automarket.DAL.Repositories
         public async Task<Car> GetByName(string name)
         {
             return await _dbContext.Cars.FirstOrDefaultAsync(x => x.Name == name);
+        }
+
+        public async Task<Car> Update(Car entity)
+        {
+            _dbContext.Cars.Update(entity);
+            await _dbContext.SaveChangesAsync();
+
+            return entity;
         }
     }
 }
