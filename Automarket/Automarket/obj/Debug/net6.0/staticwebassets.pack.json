@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\Automarket.bundle.scp.css"
     },
     {
+      "Id": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\wwwroot\\css\\backImage.css",
+      "PackagePath": "staticwebassets\\css\\backImage.css"
+    },
+    {
+      "Id": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\wwwroot\\css\\card.css",
+      "PackagePath": "staticwebassets\\css\\card.css"
+    },
+    {
+      "Id": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\wwwroot\\css\\label.css",
+      "PackagePath": "staticwebassets\\css\\label.css"
+    },
+    {
+      "Id": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\wwwroot\\css\\menu.css",
+      "PackagePath": "staticwebassets\\css\\menu.css"
+    },
+    {
+      "Id": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\wwwroot\\css\\paragraph.css",
+      "PackagePath": "staticwebassets\\css\\paragraph.css"
+    },
+    {
       "Id": "D:\\GitHub\\Automarket\\Automarket\\Automarket\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
