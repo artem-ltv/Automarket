@@ -12,5 +12,6 @@ namespace Automarket.Domain.ViewModels.Car
         public decimal Price { get; set; }
         public DateTime CreateDate { get; set; }
         public TypeCar TypeCar { get; set; }
+        public IFormFile Avatar { get; set; }
     }
 }
