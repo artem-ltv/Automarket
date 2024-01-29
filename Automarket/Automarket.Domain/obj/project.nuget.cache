@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oI54pJNctcg8/YT6j+3WWr/3ebKaEsxMjl/Y2JlTayysaMHF2Og8I3XCdpTz5+UbrqjPsExKAkXl5ckVyizg5w==",
+  "dgSpecHash": "LRoROJL0TlXbx5+4FCf9k/IFa9lY/wrZV0UMv2IgonAJ8ZlQD87fL2IyCu5B4yx54vCoPjoiSYvc+gNkRg2oXw==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Automarket\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\artemLitvinenko\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -130,7 +130,7 @@ namespace Automarket.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<bool>> CreateCar(CarViewModel carViewModel)
+        public async Task<IBaseResponse<bool>> CreateCar(CarViewModel carViewModel, byte[] image)
         {
             var baseResponse = new BaseResponse<bool>();
 

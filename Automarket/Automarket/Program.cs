@@ -1,8 +1,5 @@
+using Automarket;
 using Automarket.DAL;
-using Automarket.DAL.Interfaces;
-using Automarket.DAL.Repositories;
-using Automarket.Service.Implementations;
-using Automarket.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 internal class Program
@@ -14,8 +11,8 @@ internal class Program
         // Add services to the container.
         builder.Services.AddControllersWithViews();
 
-        builder.Services.AddScoped<ICarRepository, CarRepository>();
-        builder.Services.AddScoped<ICarService, CarService>();
+        builder.Services.InitializeRepositories();
+        builder.Services.InitializeServices();
 
         var connection = builder.Configuration.GetConnectionString("DefaultConnection");
         builder.Services.AddDbContext<ApplicationDbContext>(options =>

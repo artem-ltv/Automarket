@@ -2,6 +2,7 @@
 using Automarket.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Automarket.Controllers
 {
@@ -67,7 +68,7 @@ namespace Automarket.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Save(int id)
         {
             if(id == 0)
@@ -88,20 +89,29 @@ namespace Automarket.Controllers
         [HttpPost]
         public async Task<IActionResult> Save(CarViewModel model)
         {
+            ModelState.Remove("CreateDate");
+
             if(ModelState.IsValid)
             {
                 if(model.Id == 0)
                 {
-                    await _carService.CreateCar(model);
+                    byte[] imageData;
+                    using(var binaryReader = new BinaryReader(model.Avatar.OpenReadStream()))
+                    {
+                        imageData = binaryReader.ReadBytes((int)model.Avatar.Length);
+                    }
+
+                    await _carService.CreateCar(model, imageData);
                 }
 
                 else
                 {
                     await _carService.Edit(model.Id, model);
                 }
-            }
 
-            return RedirectToAction("GetCars");
+                return RedirectToAction("GetCars");
+            }
+            return View();
         }
     }
 }

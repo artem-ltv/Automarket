@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6koR2ri4r4S/LYm7ZOwtUFSclsvNAMx1D050CfLNLso0OmG6KrjNN/AEJPmSp1mDkVDTIBAq86JxgA9SbgCQgQ==",
+  "dgSpecHash": "jcCwg2p6copgtKpTH16Md8w9ACEwpIBinZf5LgQKA+fwZ9yDe7LxD4UvQZBzJ/r+ElDhBh1n94r0yQn+ySl9iA==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Automarket\\Automarket\\Automarket.Service\\Automarket.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.25\\microsoft.entityframeworkcore.abstractions.6.0.25.nupkg.sha512",
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.25\\microsoft.entityframeworkcore.analyzers.6.0.25.nupkg.sha512",
@@ -17,6 +18,7 @@
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\artemLitvinenko\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\artemLitvinenko\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
